@@ -1,0 +1,9 @@
+level_generator
+
+Updated generated_tilemap_with_ai() function -> line 270 and 274 -> return tilemap ->> return prompt, tilemap
+get_level() line 347 tilemap = generate_tilemap_with_ai(level) ->> prompt, tilemap = generate_tilemap_with_ai(level)
+350 return tilemap ->> return prompt, tilemap
+
+
+main
+256 tilemap = get_level(self.current_level) ->> prompt, tilemap = get_level(self.current_level)
